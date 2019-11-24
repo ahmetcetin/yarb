@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { FocusStyleManager } from '@blueprintjs/core';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from './routes';
+import Layout from './Layout';
+import { topMenu } from './menu';
+import { languages } from './languages';
 import './App.css';
 
-function App() {
+FocusStyleManager.onlyShowFocusOnTabs();
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Layout topMenu={topMenu} languages={languages}>
+          <Routes />
+        </Layout>
+      </Router>
     </div>
   );
-}
+};
+
+App.displayName = 'App';
 
 export default App;

@@ -1,5 +1,16 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
 .App {
+  min-height: 100vh;
   text-align: center;
+  position: relative;
+  /* display: flex; */
 }
 
 .App-logo {
