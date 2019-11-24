@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Yet Another React Boilerplate
+This project was bootstrapped with:
+
+- [Create React App](https://github.com/facebook/create-react-app),
+- [Blueprintjs](https://blueprintjs.com/),
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start),
+- [react-i18next](https://react.i18next.com/)
 
 ## Available Scripts
 
