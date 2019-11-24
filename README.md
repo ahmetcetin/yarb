@@ -7,6 +7,13 @@ This project was bootstrapped with:
 - [React Router](https://reacttraining.com/react-router/web/guides/quick-start),
 - [react-i18next](https://react.i18next.com/)
 
+## Configuration Files
+
+`/src/routes.js`
+You can add/edit your routes here.
+`authenticatedRoutes` array lists routes requiring logged in user.
+`openRoutes` array lists the routes every visitor can view.
+
 ## Available Scripts
 
 In the project directory, you can run:

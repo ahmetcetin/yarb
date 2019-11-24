@@ -1,21 +1,25 @@
 import React, { lazy, Suspense } from 'react';
-import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import { AuthenticatedRoute } from './components/AuthenticatedRoute';
-import Login from './pages/Login';
 
-const LoadingMessage = () => "I'm loading...";
+const LoadingMessage = () => 'Loading...';
 const pages = './pages';
 
-const routeList = [
-  { path: '/page1', page: 'Page1' },
-  { path: '/page2', page: 'Page2' },
+const authenticatedRoutes = [
+  { path: '/page1', page: 'Page1', exact: false },
+  { path: '/page2', page: 'Page2', exact: false },
+];
+
+const openRoutes = [
+  { path: '/login', page: 'Login', exact: true },
+  // { path: '/', page: 'Home' }
 ];
 
 export const Routes = () => (
   <Suspense fallback={<LoadingMessage />}>
     <Switch>
-      {routeList.map(({ path, page, exact }) => (
+      {authenticatedRoutes.map(({ path, page, exact }) => (
         <AuthenticatedRoute
           exact={exact !== false}
           key={path}
@@ -24,7 +28,10 @@ export const Routes = () => (
           component={lazy(() => import(`${pages}/${page}`))}
         />
       ))}
-      <Login />
+      {openRoutes.map(({ path, page, exact }) => {
+        const Component = lazy(() => import(`${pages}/${page}`));
+        return <Route exact={exact} path={path} render={props => <Component {...props} />} />;
+      })}
     </Switch>
   </Suspense>
 );
