@@ -12,7 +12,7 @@ This project was bootstrapped with:
 ### ```/src/routes.js```
 You can add/edit your routes here.
 `authenticatedRoutes` array lists routes requiring logged in user.
-`openRoutes` array lists the routes every visitor can view.
+`openRoutes` array lists the routes every visitors can view.
 
 ## Available Scripts
 
