@@ -1,5 +1,6 @@
 # Yet Another React Boilerplate
 
+Opinionated, configurable easily, multi-language ready, dark and light mode included react boilerplate.
 This project was bootstrapped with:
 
 - [Create React App](https://github.com/facebook/create-react-app),
@@ -9,10 +10,19 @@ This project was bootstrapped with:
 
 ## Configuration Files
 
-### ```/src/routes.js```
-You can add/edit your routes here.
+### `/src/routes.js`
+
+You can add/edit your routes here. All routes are lazy loaded with using React Suspense.
 `authenticatedRoutes` array lists routes requiring logged in user.
 `openRoutes` array lists the routes every visitors can view.
+
+### `/src/menu.js`
+
+You can add/edit the menu items to be shown on the top bar.
+
+### `/src/languages.js`
+
+List of languages supported. For each language, you should add a folder with `translation.json` file under `/public/locales` folder. If you are using [BabelEdit](https://www.codeandweb.com/babeledit) for translations, `webapp.babel` project file also included in the root folder.
 
 ## Available Scripts
 
