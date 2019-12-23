@@ -1,6 +1,6 @@
 # Yet Another React Boilerplate
 
-Opinionated, configurable easily, multi-language ready, dark and light mode included react boilerplate.
+Opinionated, easily configurable, multi-language ready, dark and light mode included react boilerplate.
 This project was bootstrapped with:
 
 - [Create React App](https://github.com/facebook/create-react-app),
