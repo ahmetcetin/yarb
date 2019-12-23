@@ -3,22 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@blueprintjs/core": "^3.21.0",
+    "@blueprintjs/core": "^3.22.3",
     "@blueprintjs/datetime": "^3.15.1",
     "@blueprintjs/select": "^3.11.2",
     "@blueprintjs/table": "^3.8.2",
-    "@blueprintjs/timezone": "^3.6.0",
-    "i18next": "^19.0.1",
+    "@blueprintjs/timezone": "^3.6.1",
+    "i18next": "^19.0.2",
     "i18next-browser-languagedetector": "^4.0.1",
     "i18next-xhr-backend": "^3.2.2",
     "moment": "^2.24.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-i18next": "^11.2.2",
+    "react-i18next": "^11.2.7",
     "react-mosaic-component": "^3.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "react-use": "^13.9.0"
+    "react-scripts": "3.3.0",
+    "react-use": "^13.12.2"
   },
   "scripts": {
     "start": "react-scripts start",
